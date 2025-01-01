@@ -2,6 +2,8 @@
 
 Welcome to the py-to-do repository! 📝✨
 
+![image](https://github.com/user-attachments/assets/d9df64d4-6498-49c1-90d4-c81c7d74e317)
+
 ## Overview
 
 This repository contains a simple To-Do List web application built using **PHP**, **Python**, **JSON**, and **AJAX** for task management. The app allows users to add and delete tasks, and the task list is saved persistently without refreshing the page.
