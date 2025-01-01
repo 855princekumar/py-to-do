@@ -3,6 +3,7 @@
 Welcome to the py-to-do repository! 📝✨
 
 ![image](https://github.com/user-attachments/assets/d9df64d4-6498-49c1-90d4-c81c7d74e317)
+![image](https://github.com/user-attachments/assets/6b8b96c9-d374-45c5-8b88-c9446a6a27bb)
 
 ## Overview
 
