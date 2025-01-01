@@ -1,65 +1,97 @@
-# To-Do List with Python GUI
+# py-to-do
 
-Welcome to the To-Do List repository! 📝✨
+Welcome to the py-to-do repository! 📝✨
 
 ## Overview
 
-This repository contains a simple To-Do List application built using Python and featuring a graphical user interface (GUI) for easy interaction.
+This repository contains a simple To-Do List web application built using **PHP**, **Python**, **JSON**, and **AJAX** for task management. The app allows users to add and delete tasks, and the task list is saved persistently without refreshing the page.
 
-![ToDo List Preview](https://github.com/855princekumar/to-do-list/blob/main/to%20do%20list.png)
+## Tech Stack
+
+- **PHP:** Used for the frontend to handle user inputs and requests. It processes form submissions and interacts with the backend Python script.
+- **Python:** Handles backend logic, processing task management requests, and updates a **JSON** file to store the tasks.
+- **JSON:** Used as a lightweight data format to store the task list, allowing persistence across page reloads.
+- **AJAX:** Ensures smooth task updates without the need for a page refresh, providing a seamless user experience.
+
+### How It Works
+
+- The **PHP** frontend manages the user interface and handles form submissions. It sends task management requests (add or delete tasks) to the **Python** script.
+- The **Python** script processes these requests by reading and modifying the **JSON** file, ensuring that tasks persist even after page reloads.
+- **AJAX** enables dynamic task updates by exchanging data in **JSON** format, avoiding the need to reload the page and making the experience more responsive and efficient.
+
+### Advantages:
+
+- Efficient task handling with minimal server load.
+- Real-time task updates without page refresh.
+- Data persistence with JSON-based storage for easy scalability.
+- Seamless integration of frontend and backend using PHP and Python.
+- AJAX ensures a smooth, user-friendly experience.
 
 ## Features
 
 - **Add Tasks:** Quickly add new tasks to your to-do list.
 - **Delete Tasks:** Remove tasks from the list with a click.
+- **Persistent Storage:** Task data is saved across page reloads using Python and JSON.
 - **User-Friendly Interface:** Enjoy a clean and intuitive interface.
-- **Save and Load:** Save your to-do list to a file for later use.
 
 ## How to Use
 
-1. **Adding Tasks:** Type your task into the input field at the top and press "Add Task".
-2. **Deleting Tasks:** Click on a task in the list and press "Delete Task" to remove it.
-3. **Saving and Loading:** Use the "Save List" and "Load List" buttons to manage your tasks across sessions.
+1. **Adding Tasks:** Type your task into the input field at the top and press "Add".
+2. **Deleting Tasks:** Click on a task in the list and press "Delete" to remove it.
+3. The task list will update dynamically without refreshing the page.
 
 ## Installation
 
+### Windows (Using XAMPP):
+
 1. Clone the repository to your local machine:
 
-```bash
-git clone https://github.com/855princekumar/todo-list-python-gui.git
-```
+    ```bash
+    git clone https://github.com/855princekumar/py-to-do.git
+    ```
 
 2. Navigate to the project directory:
 
-```bash
-cd todo-list-python-gui
-```
+    ```bash
+    cd py-to-do
+    ```
 
 3. Run the application:
 
-```bash
-python todo_list.py
-```
+    ```bash
+    php -S localhost:8000
+    ```
 
-## Convert to Executable
+The app will be accessible in your browser on [http://localhost:8000](http://localhost:8000).
 
-You can convert the Python code into an executable (.exe) file for easier distribution using `pyinstaller`. Follow these steps:
+### Linux (Using Apache Server):
 
-1. Ensure `pyinstaller` is installed:
+1. Clone the repository to your machine:
 
-```bash
-pip install pyinstaller
-```
+    ```bash
+    git clone https://github.com/855princekumar/py-to-do.git
+    ```
 
-2. Navigate to the directory containing your Python script (`todo_list.py`) in the command prompt or terminal.
+2. Move the project directory to the Apache server's root directory:
 
-3. Run the following command to create the executable:
+    ```bash
+    sudo mv py-to-do /var/www/html/
+    ```
 
-```bash
-pyinstaller --onefile todo_list.py
-```
+3. Change the directory permissions to allow access:
 
-This command will create a `dist` directory containing the executable file. The `--onefile` flag bundles everything into a single executable file.
+    ```bash
+    sudo chown -R www-data:www-data /var/www/html/py-to-do
+    sudo chmod -R 755 /var/www/html/py-to-do
+    ```
+
+4. Restart the Apache server:
+
+    ```bash
+    sudo systemctl restart apache2
+    ```
+
+The app will be accessible in your browser on [http://localhost/py-to-do](http://localhost/py-to-do).
 
 ## Contributions
 
@@ -73,12 +105,12 @@ Contributions to enhance the functionality or fix issues are welcome. Follow the
 
 ## Requirements
 
+- PHP 7.x or above
 - Python 3.x
-- Tkinter
-- pyinstaller
+- A web browser
+- Apache Server (for Linux)
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute this code for your purposes.
+This project is licensed under the **Apache License 2.0**. You may use, modify, and distribute the code in accordance with the terms of the license.
 
-Happy task managing! 🚀
