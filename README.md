@@ -69,6 +69,8 @@ The app will be accessible in your browser on [http://localhost:8000](http://loc
 
 ### Linux (Using Apache Server):
 
+![image](https://github.com/user-attachments/assets/af688fe2-7ed7-43cb-8aa7-7920e0371d4b)
+
 1. Clone the repository to your machine:
 
     ```bash
